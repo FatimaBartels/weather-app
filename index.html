@@ -3,61 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
   <body>
-    <div class="city-name">
-      <header>
-        <h1>Brussel, Belgium</h1>
-        <p>
-          <span class="current-date">March 31, 22024</span> <br />
-          <span class="current-datetime">Friday, 10:05</span>
-        </p>
-      </header>
-    </div>
-    <main>
-      <div class="weather-info">
-        <div class="current-weather-temp">
+    <div class="weather-app">
+      <div class="city-name">
+        <header>
+          <h1>Brussel, Belgium</h1>
           <p>
-            <span class="current-temperature">15</span>
-            <span class="current-degrees">°C</span>
-            <br />
-            <span class="humidity">Humidity: 89% </span>
-            <span class="wind">Wind: 6.17km/hr</span>
+            <span class="current-date">March 31, 22024</span> <br />
+            <span class="current-datetime">Friday, 10:05</span>
           </p>
-        </div>
-
-        <div>
-          <p>🌧</p>
-        </div>
-        <div>
-          <p>
-            <span class="weather-terms">Moderate rain</span>
-            <br />
-            <span class="reminder">☔Don't forget to bring your umbrella!</span>
-          </p>
-        </div>
-        <form>
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" value="Search" />
-        </form>
+        </header>
       </div>
-    </main>
+      <main>
+        <div class="weather-info">
+          <div class="current-weather-temp">
+            <p>
+              <span class="current-temperature">15</span>
+              <span class="current-degrees">°C</span>
+              <br />
+              <span class="humidity">Humidity: 89% </span>
+              <span class="wind">Wind: 6.17km/hr</span>
+            </p>
+          </div>
 
-    <footer>
-      <p>
-        This project was coded with ❤ by
-        <a href="https://github.com/FatimaBartels" target="_blank"
-          >Fatima Bartels</a
-        >, is open-sourced on
-        <a href="https://github.com/FatimaBartels/weather-app" target="_blank"
-          >GitHub</a
-        >
-        and hosted on
-        <a href="https://fatimabartels-weatherapp.netlify.app/" target="_blank"
-          >Netlify</a
-        >
-      </p>
-    </footer>
+          <div>
+            <p>🌧</p>
+          </div>
+          <div>
+            <p>
+              <span class="weather-terms">Moderate rain</span>
+              <br />
+              <span class="reminder"
+                >☔Don't forget to bring your umbrella!</span
+              >
+            </p>
+          </div>
+          <form>
+            <input type="search" placeholder="Enter a city..." required />
+            <input type="submit" value="Search" />
+          </form>
+        </div>
+      </main>
+
+      <footer>
+        <p>
+          This project was coded with ❤ by
+          <a href="https://github.com/FatimaBartels" target="_blank"
+            >Fatima Bartels</a
+          >, is open-sourced on
+          <a href="https://github.com/FatimaBartels/weather-app" target="_blank"
+            >GitHub</a
+          >
+          and hosted on
+          <a
+            href="https://fatimabartels-weatherapp.netlify.app/"
+            target="_blank"
+            >Netlify</a
+          >
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
