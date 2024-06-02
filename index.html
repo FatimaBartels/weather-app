@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
@@ -16,40 +16,36 @@
     <div class="weather-app">
       <div>
         <header>
-          <h1 class="weather-app-city">Brussel, Belgium</h1>
-          <p>
-            <span class="current-date">March 31, 22024</span> <br />
-            <span class="current-datetime">Friday, 10:05</span>
-          </p>
+          <div class="city-name-container">
+            <h1 class="weather-app-city">Brussel, Belgium</h1>
+            <p class="date-time">
+              <span class="current-date">March 31, 2024</span> <br />
+              <span class="current-datetime">Friday, 10:05</span>
+            </p>
+          </div>
         </header>
       </div>
       <main>
         <div class="weather-app-data">
-          <div class="current-weather-temp">
-            <p>
-              <span class="current-temperature">15</span>
-              <span class="current-degrees">°C</span>
-            </p>
+          <div class="current-weather-container">
+            <div class="current-temperature">15</div>
+
+            <div class="weather-unit">°C</div>
+          </div>
+
+          <div>
+            <div class="weather-icon">🌤️</div>
+          </div>
+          <div>
+            <p class="weather-terms">Moderate rain</p>
             <p class="other-temp-data">
               Humidity: <span class="current-humidity">89% </span>
               <br />
               Wind:<span class="current-windspeed"> 6.17km/hr</span>
             </p>
           </div>
-
-          <div>
-            <p>🌧</p>
-          </div>
-          <div>
-            <p>
-              <span class="weather-terms">Moderate rain</span>
-              <br />
-              <span class="reminder"
-                >☔Don't forget to bring your umbrella!</span
-              >
-            </p>
-          </div>
         </div>
+        <p class="reminder">☔Don't forget to bring your umbrella!</p>
         <form class="search-form">
           <input
             type="search"

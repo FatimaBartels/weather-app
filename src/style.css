@@ -1,6 +1,8 @@
 body {
   background-color: rgba(239, 238, 238, 0.679);
-  font-family: "Nunito", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 a {
@@ -15,23 +17,57 @@ a {
   border-radius: 15px;
   padding: 30px;
 }
-
+.city-name-container {
+  display: flex;
+  justify-content: space-between;
+}
 .weather-app-city {
   margin: 0;
-  font-size: 38px;
+  font-family: "Playfair Display", serif;
+  font-size: 35px;
   line-height: 48px;
 }
 
-.weather-app-data {
-  display: flex;
-  justify-content: space-between;
+.date-time {
+  font-size: 13px;
+  font-style: italic;
 }
 
 main {
   padding: 30px 0;
 }
+
+.weather-app-data {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.current-weather-container {
+  display: flex;
+}
+
+.current-temperature {
+  font-size: 75px;
+  font-weight: bold;
+}
+
+.weather-unit {
+  font-size: 25px;
+  margin-top: 16px;
+}
+.weather-icon {
+  font-size: 55px;
+}
+
+.weather-terms {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 500;
+}
 .other-temp-data {
   font-size: 12px;
+  font-weight: 600;
 }
 .current-humidity,
 .current-windspeed {
