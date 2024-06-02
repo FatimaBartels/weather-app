@@ -3,6 +3,10 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
+a {
+  color: rgb(235, 124, 235);
+}
+
 .weather-app {
   background: white;
   max-width: 600px;
@@ -10,4 +14,55 @@ body {
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   border-radius: 15px;
   padding: 30px;
+}
+
+.weather-app-city {
+  margin: 0;
+  font-size: 38px;
+  line-height: 48px;
+}
+
+.weather-app-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  padding: 30px 0;
+}
+.other-temp-data {
+  font-size: 12px;
+}
+.current-humidity,
+.current-windspeed {
+  color: rgb(235, 124, 235);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.search-form-input {
+  background-color: rgba(239, 238, 238, 0.679);
+  border: none;
+  border-radius: 6px;
+  width: 80%;
+  font-size: 16px;
+  padding: 15px 20px;
+}
+
+.search-form-button {
+  background-color: rgb(235, 124, 235);
+  padding: 15px 30px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+footer {
+  border-top: 1px solid rgba(133, 130, 130, 0.841);
+  padding: 30px 0 0 0;
+  text-align: center;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.6);
 }

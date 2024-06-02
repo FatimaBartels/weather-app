@@ -14,9 +14,9 @@
   </head>
   <body>
     <div class="weather-app">
-      <div class="city-name">
+      <div>
         <header>
-          <h1>Brussel, Belgium</h1>
+          <h1 class="weather-app-city">Brussel, Belgium</h1>
           <p>
             <span class="current-date">March 31, 22024</span> <br />
             <span class="current-datetime">Friday, 10:05</span>
@@ -24,14 +24,16 @@
         </header>
       </div>
       <main>
-        <div class="weather-info">
+        <div class="weather-app-data">
           <div class="current-weather-temp">
             <p>
               <span class="current-temperature">15</span>
               <span class="current-degrees">°C</span>
+            </p>
+            <p class="other-temp-data">
+              Humidity: <span class="current-humidity">89% </span>
               <br />
-              <span class="humidity">Humidity: 89% </span>
-              <span class="wind">Wind: 6.17km/hr</span>
+              Wind:<span class="current-windspeed"> 6.17km/hr</span>
             </p>
           </div>
 
@@ -47,11 +49,16 @@
               >
             </p>
           </div>
-          <form>
-            <input type="search" placeholder="Enter a city..." required />
-            <input type="submit" value="Search" />
-          </form>
         </div>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
       </main>
 
       <footer>
