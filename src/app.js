@@ -6,25 +6,18 @@ function displayWeather(response) {
   let humidityElement = document.querySelector("#humidity");
   let windSpeedElement = document.querySelector("#windspeed");
   let timeElement = document.querySelector("#current-date");
-
   let date = new Date(response.data.time * 1000);
+  let iconImage = document.querySelector("#icon");
 
+  console.log(response.data);
   cityElement.innerHTML = response.data.city;
-  //dateYear.innerHTML = showDate();
   timeElement.innerHTML = formatDate(date);
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/hr`;
-
   currentTemperature.innerHTML = Math.round(temperature);
+  iconImage.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-icon"/>`;
 }
-
-/**function showDate() {
-  let currentDate = new Date();
-  
-  let month = months[currentDate.getMonth()];
-  return `${month} ${currentDay}, ${fullYear}`;
-}*/
 
 function formatDate(date) {
   let currentDay = date.getDate();
