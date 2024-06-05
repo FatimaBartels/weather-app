@@ -72,8 +72,39 @@ function searchSubmit(event) {
   searchCity(searchInput.value);
 }
 
+function displayForecast() {
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+  <div class="forecast-day">
+            <div class="col-2">
+              <div class="forecast-date">${day}</div>
+
+              <img
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+                width="40px"
+              />
+              <div class="forecast-temperature">
+                <span class="forecast-temperature-max"
+                  ><strong>18°</strong></span
+                >
+                <span class="forecast-temperature-main">12°</span>
+              </div>
+            </div>
+          </div>
+`;
+  });
+  let dailyForecast = document.querySelector("#daily-forecast");
+  dailyForecast.innerHTML = forecastHtml;
+}
+
 let searchFormElement = document.querySelector(".search-form");
 
 searchFormElement.addEventListener("submit", searchSubmit);
 
 searchCity("Brussels");
+displayForecast();
