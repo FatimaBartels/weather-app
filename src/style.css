@@ -29,8 +29,9 @@ a {
 }
 
 .date-time {
-  font-size: 13px;
+  font-size: 15px;
   font-style: italic;
+  font-weight: 500;
 }
 
 main {
@@ -53,8 +54,8 @@ main {
 }
 
 .weather-unit {
-  font-size: 25px;
-  margin-top: 30px;
+  font-size: 28px;
+  margin-top: 35px;
 }
 .weather-icon {
   width: 150px;
@@ -64,9 +65,8 @@ main {
 
 .weather-terms {
   font-family: "Playfair Display", serif;
-  font-style: italic;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 22px;
+  font-weight: 600;
   margin-top: 25px;
 }
 .other-temp-data {
