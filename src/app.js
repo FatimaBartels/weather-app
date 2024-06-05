@@ -9,8 +9,8 @@ function displayWeather(response) {
   let date = new Date(response.data.time * 1000);
   let iconImage = document.querySelector("#icon");
 
-  console.log(response.data);
-  cityElement.innerHTML = response.data.city;
+  console.log(response.data.country);
+  cityElement.innerHTML = `${response.data.city}, ${response.data.country}`;
   timeElement.innerHTML = formatDate(date);
   descriptionElement.innerHTML =
     response.data.condition.description.charAt(0).toUpperCase() +
