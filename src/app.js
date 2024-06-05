@@ -12,7 +12,9 @@ function displayWeather(response) {
   console.log(response.data);
   cityElement.innerHTML = response.data.city;
   timeElement.innerHTML = formatDate(date);
-  descriptionElement.innerHTML = response.data.condition.description;
+  descriptionElement.innerHTML =
+    response.data.condition.description.charAt(0).toUpperCase() +
+    response.data.condition.description.slice(1);
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/hr`;
   currentTemperature.innerHTML = Math.round(temperature);
