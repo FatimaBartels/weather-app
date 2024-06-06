@@ -14,6 +14,11 @@
     <title>Weather App</title>
   </head>
   <body>
+    <label class="switch">
+      <input type="checkbox" />
+      <span class="slider round"></span>
+    </label>
+
     <div class="weather-app">
       <div>
         <header>
@@ -32,7 +37,12 @@
 
             <div class="weather-unit">°C</div>
           </div>
-
+          <div class="feels-temperature">
+            <div class="feels-text">
+              Feels like: <br />
+              <span id="feels-like"></span>
+            </div>
+          </div>
           <div>
             <div id="icon"></div>
           </div>
@@ -55,7 +65,7 @@
           />
           <input type="submit" value="Search" class="search-form-button" />
         </form>
-        <p>Daily Forecast</p>
+        <p class="daily-forecast-text">Daily Forecast</p>
         <div class="weather-forecast" id="daily-forecast"></div>
       </main>
 

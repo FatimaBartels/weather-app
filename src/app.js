@@ -5,19 +5,23 @@ function displayWeather(response) {
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
   let windSpeedElement = document.querySelector("#windspeed");
+  let feelsLike = document.querySelector("#feels-like");
+  let feelsTemperature = response.data.temperature.feels_like;
   let timeElement = document.querySelector("#current-date");
   let date = new Date(response.data.time * 1000);
   let iconImage = document.querySelector("#icon");
+  console.log(response.data.temperature);
 
-  console.log(response.data.country);
+  console.log(response.data.temperature.feels_like);
   cityElement.innerHTML = `${response.data.city}, ${response.data.country}`;
   timeElement.innerHTML = formatDate(date);
   descriptionElement.innerHTML =
     response.data.condition.description.charAt(0).toUpperCase() +
     response.data.condition.description.slice(1);
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
-  windSpeedElement.innerHTML = `${response.data.wind.speed}km/hr`;
+  windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
   currentTemperature.innerHTML = Math.round(temperature);
+  feelsLike.innerHTML = `${Math.round(feelsTemperature)}°`;
   iconImage.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-icon"/>`;
 
   getForecast(response.data.city);
@@ -122,3 +126,15 @@ let searchFormElement = document.querySelector(".search-form");
 searchFormElement.addEventListener("submit", searchSubmit);
 
 searchCity("Brussels");
+
+//function to change theme
+function changeTheme() {
+  let body = document.querySelector("body");
+  if (body.classList.contains("dark")) {
+    body.classList.remove("dark");
+  } else {
+    body.classList.add("dark");
+  }
+}
+let themeButton = document.querySelector(".slider");
+themeButton.addEventListener("click", changeTheme);
