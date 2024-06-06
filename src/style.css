@@ -44,11 +44,11 @@ body {
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: #ec59b4;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px #e938bd93;
 }
 
 input:checked + .slider:before {
@@ -64,22 +64,6 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.theme {
-  display: block;
-  font-size: 12px;
-  background: rgb(235, 124, 235);
-  color: whitesmoke;
-  padding: 10px 12px;
-  margin: 25px auto;
-  text-transform: uppercase;
-  transition: all 200ms ease-in-out;
-}
-.theme:hover {
-  color: rgb(36, 35, 35);
-  background: transparent;
-  font-weight: bold;
-}
-
 .dark {
   background: rgb(8, 8, 8);
   color: white;
@@ -93,22 +77,17 @@ input:checked + .slider:before {
 }
 
 .dark .slider {
-  font-size: 12px;
   background: transparent;
-  box-shadow: 3px 3px 5px 0px rgba(75, 82, 80, 0.514);
-  border: 2px solid #a4b5b818;
-  color: whitesmoke;
-  padding: 10px 12px;
+  height: 25px;
   margin: 25px auto;
   transition: all 200ms ease-in-out;
 }
 .dark .slider:hover {
-  font-size: 12px;
   background: rgb(201, 99, 201);
   color: whitesmoke;
-  padding: 10px 12px;
   margin: 25px auto;
 }
+
 /*start app*/
 a {
   color: rgb(235, 124, 235);
