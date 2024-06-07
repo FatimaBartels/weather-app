@@ -1,6 +1,5 @@
 body {
   background-image: url("img/purple-bg.jpg");
-  /*background-color: rgba(239, 238, 238, 0.679);*/
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -10,8 +9,8 @@ body {
   position: relative;
   display: block;
   width: 50px;
-  height: 25px;
-  margin: 25px auto;
+  height: 24px;
+  margin: 65px auto 0;
 }
 
 .switch input {
@@ -27,7 +26,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #cccccc5a;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -39,23 +38,27 @@ body {
   width: 18px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: #bc8ec5;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
+.slider:hover {
+  background: rgba(49, 48, 48, 0.77);
+}
+
 input:checked + .slider {
-  background-color: #ec59b4;
+  background-color: #9b999934;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #e938bd93;
+  box-shadow: 0 0 1px #993b8193;
 }
 
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  transform: translateX(24px);
 }
 .slider.round {
   border-radius: 34px;
@@ -70,7 +73,7 @@ input:checked + .slider:before {
   color: white;
 }
 .dark .weather-app {
-  background: rgba(27, 27, 27, 0.897);
+  background: rgba(27, 27, 27, 0.777);
 }
 
 .dark a {
@@ -82,15 +85,11 @@ input:checked + .slider:before {
 }
 
 .dark .slider {
-  background: transparent;
-  height: 25px;
-  margin: 25px auto;
+  height: 24px;
   transition: all 200ms ease-in-out;
 }
 .dark .slider:hover {
   background: rgb(201, 99, 201);
-  color: whitesmoke;
-  margin: 25px auto;
 }
 
 /*start app*/
@@ -99,9 +98,9 @@ a {
 }
 
 .weather-app {
-  background: white;
+  background: #e6dddea1;
   max-width: 600px;
-  margin: 60px auto;
+  margin: 25px auto 60px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   border-radius: 15px;
   padding: 30px;
