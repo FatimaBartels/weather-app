@@ -1,5 +1,6 @@
 body {
-  background-color: rgba(239, 238, 238, 0.679);
+  background-image: url("img/purple-bg.jpg");
+  /*background-color: rgba(239, 238, 238, 0.679);*/
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -65,7 +66,7 @@ input:checked + .slider:before {
 }
 
 .dark {
-  background: rgb(8, 8, 8);
+  background-image: url("img/dark-purple.jpg");
   color: white;
 }
 .dark .weather-app {
@@ -221,7 +222,7 @@ main {
 }
 
 .search-form-button:hover {
-  background-color: rgb(209, 88, 209);
+  background: linear-gradient(to right, #c16af3 0%, #f766c6 100%);
 }
 
 .daily-forecast-text {
