@@ -133,7 +133,7 @@ main {
   text-align: center;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .weather-app-data {
     flex-direction: column;
   }
@@ -143,7 +143,7 @@ main {
   display: flex;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .current-weather-container {
     flex-direction: row;
     justify-content: center;
@@ -153,16 +153,16 @@ main {
 .current-temperature {
   font-size: 75px;
   font-weight: bold;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 .weather-unit {
   font-size: 28px;
-  margin-top: 35px;
+  margin-top: 30px;
 }
 
 .feels-temperature {
-  margin-top: 68px;
+  margin-top: 50px;
 }
 
 .feels-text {
@@ -174,7 +174,8 @@ main {
   font-style: italic;
 }
 .weather-icon {
-  width: 150px;
+  width: 135px;
+  margin-top: 8px;
   /*height: 100px;
   padding-bottom: 50px;*/
 }
@@ -183,7 +184,7 @@ main {
   font-family: "Lato", sans-serif;
   font-size: 22px;
   font-weight: 600;
-  margin-top: 35px;
+  margin-top: 28px;
 }
 .other-temp-data {
   font-size: 13px;
@@ -237,7 +238,7 @@ main {
   margin-top: 20px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .weather-forecast {
     flex-direction: column;
   }
