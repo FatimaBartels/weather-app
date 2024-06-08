@@ -76,7 +76,10 @@ input:checked + .slider:before {
   background: rgba(27, 27, 27, 0.777);
 }
 
-.dark a {
+.dark a,
+.dark .current-humidity,
+.dark .current-windspeed,
+.dark .forecast-temperature {
   color: rgb(235, 124, 235);
 }
 
@@ -94,7 +97,8 @@ input:checked + .slider:before {
 
 /*start app*/
 a {
-  color: rgb(235, 124, 235);
+  color: #695a87;
+  font-weight: 600;
 }
 
 .weather-app {
@@ -194,7 +198,7 @@ main {
 }
 .current-humidity,
 .current-windspeed {
-  color: rgb(235, 124, 235);
+  color: #695a87;
   font-size: 13px;
   font-weight: 600;
 }
@@ -250,7 +254,7 @@ main {
 }
 .forecast-temperature {
   text-align: center;
-  color: rgb(235, 124, 235);
+  color: #695a87;
   margin-top: 5px;
   display: flex;
   justify-content: center;
